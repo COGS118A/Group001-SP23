@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="ram <= 2361.0\nsamples = 100.0%\nvalue = [0.26, 0.243, 0.252, 0.245]", fillcolor="#fffefd"] ;
+1 [label="battery_power <= 1277.0\nsamples = 55.8%\nvalue = [0.464, 0.419, 0.11, 0.007]", fillcolor="#fdf5f0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ram <= 1463.0\nsamples = 32.0%\nvalue = [0.571, 0.387, 0.042, 0.0]", fillcolor="#f7d9c4"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+14 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 14 ;
+39 [label="ram <= 1055.0\nsamples = 23.8%\nvalue = [0.323, 0.461, 0.2, 0.016]", fillcolor="#d9fad6"] ;
+1 -> 39 ;
+40 [label="(...)", fillcolor="#C0C0C0"] ;
+39 -> 40 ;
+61 [label="(...)", fillcolor="#C0C0C0"] ;
+39 -> 61 ;
+100 [label="px_width <= 1645.0\nsamples = 44.2%\nvalue = [0.0, 0.018, 0.434, 0.548]", fillcolor="#f7d7fa"] ;
+0 -> 100 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+101 [label="ram <= 3141.0\nsamples = 31.5%\nvalue = [0.0, 0.025, 0.508, 0.467]", fillcolor="#f0f8fd"] ;
+100 -> 101 ;
+102 [label="(...)", fillcolor="#C0C0C0"] ;
+101 -> 102 ;
+139 [label="(...)", fillcolor="#C0C0C0"] ;
+101 -> 139 ;
+162 [label="mobile_wt <= 124.5\nsamples = 12.8%\nvalue = [0.0, 0.0, 0.256, 0.744]", fillcolor="#e57dee"] ;
+100 -> 162 ;
+163 [label="(...)", fillcolor="#C0C0C0"] ;
+162 -> 163 ;
+170 [label="(...)", fillcolor="#C0C0C0"] ;
+162 -> 170 ;
+}
